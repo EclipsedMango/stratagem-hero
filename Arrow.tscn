@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://drhdnc8efof3j"]
+
+[ext_resource type="Texture2D" uid="uid://dwqhndw7u1csd" path="res://Arrow.png" id="1_dly8r"]
+
+[node name="Control" type="Control"]
+modulate = Color(0.800491, 0.800491, 0.800491, 1)
+custom_minimum_size = Vector2(68, 98)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 68.0
+offset_bottom = 68.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dly8r")
+expand_mode = 1
+stretch_mode = 5

@@ -1,0 +1,103 @@
+[gd_scene load_steps=6 format=3 uid="uid://cj1tiq454lk5b"]
+
+[ext_resource type="Script" path="res://StrategemHero.gd" id="1_idy5u"]
+[ext_resource type="PackedScene" uid="uid://drhdnc8efof3j" path="res://Arrow.tscn" id="3_8ew3u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jq8u4"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gici0"]
+bg_color = Color(0.683077, 0.683077, 0.683077, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5jlss"]
+bg_color = Color(1, 0.839216, 0.0705882, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StrategemHero" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.172833, 0.172833, 0.172833, 1)
+script = ExtResource("1_idy5u")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StrategemHero"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Bar1" type="ColorRect" parent="StrategemHero/VBoxContainer"]
+custom_minimum_size = Vector2(0, 7)
+layout_mode = 2
+
+[node name="Game" type="HBoxContainer" parent="StrategemHero/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Main" type="VBoxContainer" parent="StrategemHero/VBoxContainer/Game"]
+custom_minimum_size = Vector2(600, 400)
+layout_mode = 2
+alignment = 1
+
+[node name="Icons" type="HBoxContainer" parent="StrategemHero/VBoxContainer/Game/Main"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Name" type="ColorRect" parent="StrategemHero/VBoxContainer/Game/Main"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+color = Color(1, 0.840987, 0.0699125, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="StrategemHero/VBoxContainer/Game/Main/Name"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="StrategemHero/VBoxContainer/Game/Main/Name/CenterContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "HALLO
+"
+label_settings = SubResource("LabelSettings_jq8u4")
+
+[node name="Arrows" type="HBoxContainer" parent="StrategemHero/VBoxContainer/Game/Main"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" parent="StrategemHero/VBoxContainer/Game/Main/Arrows" instance=ExtResource("3_8ew3u")]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="StrategemHero/VBoxContainer/Game/Main"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_gici0")
+theme_override_styles/fill = SubResource("StyleBoxFlat_5jlss")
+step = 0.0
+value = 100.0
+show_percentage = false
+
+[node name="Bar2" type="ColorRect" parent="StrategemHero/VBoxContainer"]
+custom_minimum_size = Vector2(0, 7)
+layout_mode = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+unique_name_in_owner = true
+anchor_mode = 0

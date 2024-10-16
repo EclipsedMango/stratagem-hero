@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ewb0msgyefc0"]
+
+[ext_resource type="Texture2D" uid="uid://kjkgp6plb8fq" path="res://Helldivers-2-Stratagems-icons-svg-master/Eagle 500KG Bomb.svg" id="1_2irlv"]
+
+[node name="TextureRect2" type="TextureRect"]
+custom_minimum_size = Vector2(64, 64)
+texture = ExtResource("1_2irlv")
+expand_mode = 1
+stretch_mode = 5

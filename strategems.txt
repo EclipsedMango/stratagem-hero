@@ -1,0 +1,114 @@
+Machine Gun Stratagem Icon 	MG-43 Machine Gun 	
+Down Arrow.png Left Arrow.png Down Arrow.png Up Arrow.png Right Arrow.png
+Anti-Materiel Rifle Stratagem Icon 	APW-1 Anti-Materiel Rifle 	
+Down Arrow.png Left Arrow.png Right Arrow.png Up Arrow.png Down Arrow.png
+Stalwart Stratagem Icon 	M-105 Stalwart 	
+Down Arrow.png Left Arrow.png Down Arrow.png Up Arrow.png Up Arrow.png Left Arrow.png
+Expendable Anti-Tank Stratagem Icon 	EAT-17 Expendable Anti-Tank 	
+Down Arrow.png Down Arrow.png Left Arrow.png Up Arrow.png Right Arrow.png
+Recoilless Rifle Stratagem Icon 	GR-8 Recoilless Rifle 	
+Down Arrow.png Left Arrow.png Right Arrow.png Right Arrow.png Left Arrow.png
+Flamethrower Stratagem Icon 	FLAM-40 Flamethrower 	
+Down Arrow.png Left Arrow.png Up Arrow.png Down Arrow.png Up Arrow.png
+Autocannon Stratagem Icon 	AC-8 Autocannon 	
+Down Arrow.png Left Arrow.png Down Arrow.png Up Arrow.png Up Arrow.png Right Arrow.png
+Heavy Machine Gun Stratagem Icon 	MG-206 Heavy Machine Gun 	
+Down Arrow.png Left Arrow.png Up Arrow.png Down Arrow.png Down Arrow.png
+Airburst Rocket Launcher Stratagem Icon 	RL-77 Airburst Rocket Launcher 	
+Down Arrow.png Up Arrow.png Up Arrow.png Left Arrow.png Right Arrow.png
+Commando Stratagem Icon 	MLS-4X Commando 	
+Down Arrow.png Left Arrow.png Up Arrow.png Down Arrow.png Right Arrow.png
+Railgun Stratagem Icon 	RS-422 Railgun 	
+Down Arrow.png Right Arrow.png Down Arrow.png Up Arrow.png Left Arrow.png Right Arrow.png
+Spear Stratagem Icon 	FAF-14 Spear 	
+Down Arrow.png Down Arrow.png Up Arrow.png Down Arrow.png Down Arrow.png
+Orbital Gatling Barrage Stratagem Icon 	Orbital Gatling Barrage Stratagem Icon 	Orbital Gatling Barrage 	
+Right Arrow.png Down Arrow.png Left Arrow.png Up Arrow.png Up Arrow.png
+Orbital Airburst Strike Stratagem Icon 	Orbital Airburst Strike 	
+Right Arrow.png Right Arrow.png Right Arrow.png
+Orbital 120MM HE Barrage Stratagem Icon 	Orbital 120MM HE Barrage 	
+Right Arrow.png Right Arrow.png Down Arrow.png Left Arrow.png Right Arrow.png Down Arrow.png
+Orbital 380MM HE Barrage Stratagem Icon 	Orbital 380MM HE Barrage 	
+Right Arrow.png Down Arrow.png Up Arrow.png Up Arrow.png Left Arrow.png Down Arrow.png Down Arrow.png
+Orbital Walking Barrage Stratagem Icon 	Orbital Walking Barrage 	
+Right Arrow.png Down Arrow.png Right Arrow.png Down Arrow.png Right Arrow.png Down Arrow.png
+Orbital Laser Stratagem Icon 	Orbital Laser 	
+Right Arrow.png Down Arrow.png Up Arrow.png Right Arrow.png Down Arrow.png
+Orbital Napalm Barrage Stratagem Icon 	Orbital Napalm Barrage 	
+Right Arrow.png Right Arrow.png Down Arrow.png Left Arrow.png Right Arrow.png Up Arrow.png
+Orbital Railcannon Strike Stratagem Icon 	Orbital Railcannon Strike 	
+Right Arrow.png Up Arrow.png Down Arrow.png Down Arrow.png Right Arrow.png
+Eagle Strafing Run Stratagem Icon 	Eagle Strafing Run 	
+Up Arrow.png Right Arrow.png Right Arrow.png
+Eagle Airstrike Stratagem Icon 	Eagle Airstrike 	
+Up Arrow.png Right Arrow.png Down Arrow.png Right Arrow.png
+Eagle Cluster Bomb Stratagem Icon 	Eagle Cluster Bomb 	
+Up Arrow.png Right Arrow.png Down Arrow.png Down Arrow.png Right Arrow.png
+Eagle Napalm Airstrike Stratagem Icon 	Eagle Napalm Airstrike 	
+Up Arrow.png Right Arrow.png Down Arrow.png Up Arrow.png
+Jump Pack Stratagem Icon 	LIFT-850 Jump Pack 	
+Down Arrow.png Up Arrow.png Up Arrow.png Down Arrow.png Up Arrow.png
+Eagle Smoke Strike Stratagem Icon 	Eagle Smoke Strike 	
+Up Arrow.png Right Arrow.png Up Arrow.png Down Arrow.png
+Eagle 110MM Rocket Pods Stratagem Icon 	Eagle 110MM Rocket Pods 	
+Up Arrow.png Right Arrow.png Up Arrow.png Left Arrow.png
+Eagle 500KG Bomb Stratagem Icon 	Eagle 500KG Bomb 	
+Up Arrow.png Right Arrow.png Down Arrow.png Down Arrow.png Down Arrow.png
+Orbital Precision Strike Stratagem Icon 	Orbital Precision Strike 	
+Right Arrow.png Right Arrow.png Up Arrow.png
+Orbital Gas Strike Stratagem Icon 	Orbital Gas Strike 	
+Right Arrow.png Right Arrow.png Down Arrow.png Right Arrow.png
+Orbital EMS Strike Stratagem Icon 	Orbital EMS Strike 	
+Right Arrow.png Right Arrow.png Left Arrow.png Down Arrow.png
+Orbital Smoke Strike Stratagem Icon 	Orbital Smoke Strike 	
+Right Arrow.png Right Arrow.png Down Arrow.png Up Arrow.png
+HMG Emplacement Stratagem Icon 	E/MG-101 HMG Emplacement 	
+Down Arrow.png Up Arrow.png Left Arrow.png Right Arrow.png Right Arrow.png Left Arrow.png
+Shield Generator Relay Stratagem Icon 	FX-12 Shield Generator Relay 	
+Down Arrow.png Down Arrow.png Left Arrow.png Right Arrow.png Left Arrow.png Right Arrow.png
+Tesla Tower Stratagem Icon 	A/ARC-3 Tesla Tower 	
+Down Arrow.png Up Arrow.png Right Arrow.png Up Arrow.png Left Arrow.png Right Arrow.png
+Anti-Personnel Minefield Stratagem Icon 	MD-6 Anti-Personnel Minefield 	
+Down Arrow.png Left Arrow.png Up Arrow.png Right Arrow.png
+Supply Pack Stratagem Icon 	B-1 Supply Pack 	
+Down Arrow.png Left Arrow.png Down Arrow.png Up Arrow.png Up Arrow.png Down Arrow.png
+Grenade Launcher Stratagem Icon 	GL-21 Grenade Launcher 	
+Down Arrow.png Left Arrow.png Up Arrow.png Left Arrow.png Down Arrow.png
+Laser Cannon Stratagem Icon 	LAS-98 Laser Cannon 	
+Down Arrow.png Left Arrow.png Down Arrow.png Up Arrow.png Left Arrow.png
+Incendiary Mines Stratagem Icon 	MD-I4 Incendiary Mines 	
+Down Arrow.png Left Arrow.png Left Arrow.png Down Arrow.png
+Guard Dog Rover Stratagem Icon 	AX/LAS-5 "Guard Dog" Rover 	
+Down Arrow.png Up Arrow.png Left Arrow.png Up Arrow.png Right Arrow.png Right Arrow.png
+Ballistic Shield Backpack Stratagem Icon 	SH-20 Ballistic Shield Backpack 	
+Down Arrow.png Left Arrow.png Down Arrow.png Down Arrow.png Up Arrow.png Left Arrow.png
+Arc Thrower Stratagem Icon 	ARC-3 Arc Thrower 	
+Down Arrow.png Right Arrow.png Down Arrow.png Up Arrow.png Left Arrow.png Left Arrow.png
+Anti-Tank Mines Stratagem Icon 	MD-17 Anti-Tank Mines 	
+Down Arrow.png Left Arrow.png Up Arrow.png Up Arrow.png
+Quasar Cannon Stratagem Icon 	LAS-99 Quasar Cannon 	
+Down Arrow.png Down Arrow.png Up Arrow.png Left Arrow.png Right Arrow.png
+Shield Generator Pack Stratagem Icon 	SH-32 Shield Generator Pack 	
+Down Arrow.png Up Arrow.png Left Arrow.png Right Arrow.png Left Arrow.png Right Arrow.png
+Machine Gun Sentry Stratagem Icon 	A/MG-43 Machine Gun Sentry 	
+Down Arrow.png Up Arrow.png Right Arrow.png Right Arrow.png Up Arrow.png
+Gatling Sentry Stratagem Icon 	A/G-16 Gatling Sentry 	
+Down Arrow.png Up Arrow.png Right Arrow.png Left Arrow.png
+Mortar Sentry Stratagem Icon 	A/M-12 Mortar Sentry 	
+Down Arrow.png Up Arrow.png Right Arrow.png Right Arrow.png Down Arrow.png
+Guard Dog Stratagem Icon 	AX/AR-23 "Guard Dog" 	
+Down Arrow.png Up Arrow.png Left Arrow.png Up Arrow.png Right Arrow.png Down Arrow.png
+Autocannon Sentry Stratagem Icon 	A/AC-8 Autocannon Sentry 	
+Down Arrow.png Up Arrow.png Right Arrow.png Up Arrow.png Left Arrow.png Up Arrow.png
+Rocket Sentry Stratagem Icon 	A/MLS-4X Rocket Sentry 	
+Down Arrow.png Up Arrow.png Right Arrow.png Right Arrow.png Left Arrow.png
+EMS Mortar Sentry Stratagem Icon 	A/M-23 EMS Mortar Sentry 	
+Down Arrow.png Up Arrow.png Right Arrow.png Down Arrow.png Right Arrow.png
+Patriot Exosuit Stratagem Icon 	EXO-45 Patriot Exosuit 	
+Left Arrow.png Down Arrow.png Right Arrow.png Up Arrow.png Left Arrow.png Down Arrow.png Down Arrow.png
+Emancipator Exosuit Stratagem Icon 	EXO-49 Emancipator Exosuit 	
+Left Arrow.png Down Arrow.png Right Arrow.png Up Arrow.png Left Arrow.png Down Arrow.png Up Arrow.png
+Sterilizer Stratagem Icon 	TX-41 Sterilizer 	
+Down Arrow.png Left Arrow.png Up Arrow.png Down Arrow.png Left Arrow.png
+Guard Dog Breath Stratagem Icon 	AX/TX-13 "Guard Dog" Dog Breath 	
+Down Arrow.png Up Arrow.png Left Arrow.png Up Arrow.png Right Arrow.png Up Arrow.png
