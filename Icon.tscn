@@ -1,9 +1,38 @@
-[gd_scene load_steps=2 format=3 uid="uid://ewb0msgyefc0"]
+[gd_scene load_steps=3 format=3 uid="uid://ewb0msgyefc0"]
 
 [ext_resource type="Texture2D" uid="uid://kjkgp6plb8fq" path="res://Helldivers-2-Stratagems-icons-svg-master/Eagle 500KG Bomb.svg" id="1_2irlv"]
 
-[node name="TextureRect2" type="TextureRect"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vtewq"]
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_color = Color(1, 0.839216, 0.0705882, 1)
+
+[node name="Panel" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(70, 70)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1076.0
+offset_bottom = -569.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vtewq")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -6.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_2irlv")
 expand_mode = 1
 stretch_mode = 5

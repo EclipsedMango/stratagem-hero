@@ -5,6 +5,11 @@ extends ColorRect
 @onready var arrow_container: HBoxContainer = %Arrows
 @onready var camera_2d: Camera2D = %Camera2D
 @onready var progress_bar: ProgressBar = %ProgressBar
+@onready var round_num: Label = %RoundNum
+@onready var score_num: Label = %ScoreNum
+@onready var name_bar: ColorRect = %Name
+
+@onready var style_box := progress_bar.get_theme_stylebox("fill")
 
 static var yellow := Color.from_string("ffd612", Color.WHITE)
 static var gray := Color.from_string("cccccc", Color.WHITE)
@@ -15,8 +20,13 @@ var icon_res: PackedScene = preload("res://Icon.tscn")
 var current_strategem: Strategem
 var current_strategem_index: int = 0
 var current_round_strategems: Array[Strategem] = []
+var rounds: int = 0
+var score: int = 0
 
+var is_reset: bool = false
 var is_screen_shaking: bool = false
+var can_play: bool = true
+var game_just_started: bool = true
 
 var strategems: Array = []
 
@@ -57,14 +67,33 @@ func load_strategem() -> void:
 		current_round_strategems.remove_at(0)
 		icons.get_child(0).free()
 	
-	if current_round_strategems.size() <= 0:
+	if current_round_strategems.size() <= 0 || !can_play:
+		current_round_strategems.clear()
+		for child in icons.get_children():
+			child.queue_free()
+			icons.remove_child(child)
+		
+		if !game_just_started:
+			score += 150
+			score_num.text = str(score)
+		
 		for i in range(6):
 			current_round_strategems.append(strategems.pick_random())
 			var icon = icon_res.instantiate()
 			icons.add_child(icon)
-			icon.texture = current_round_strategems[i].icon
+			icon.get_child(0).texture = current_round_strategems[i].icon
+			
+		
+		progress_bar.value = 100
+		
+		if can_play:
+			game_just_started = false
+			rounds += 1
+			round_num.text = str(rounds)
+			
 	
 	icons.get_child(0).custom_minimum_size = Vector2(128, 128)
+	icons.get_child(0).self_modulate = Color.WHITE
 	
 	current_strategem = current_round_strategems[0]
 	label.text = current_strategem.name
@@ -94,15 +123,42 @@ func _process(delta: float) -> void:
 	else:
 		camera_2d.position = Vector2(0, 0)
 	
-	progress_bar.value -= 5.0 * delta
+	progress_bar.value -= 10.0 * delta
+	
+	if progress_bar.value <= 30:
+		name_bar.color = red
+		style_box.bg_color = red
+		round_num.label_settings.font_color = red
+		score_num.label_settings.font_color = red
+		icons.get_child(0).get_theme_stylebox("panel").border_color = red
+	else:
+		name_bar.color = yellow
+		style_box.bg_color = yellow
+		round_num.label_settings.font_color = yellow
+		score_num.label_settings.font_color = yellow
+		icons.get_child(0).get_theme_stylebox("panel").border_color = yellow
 	
 	if progress_bar.value <= 0:
 		is_screen_shaking = true
+		can_play = false
+		rounds = 1
+		score = 0
+		score_num.text = str(score)
+		round_num.text = str(rounds)
 		get_tree().create_timer(0.50).timeout.connect(func(): is_screen_shaking = false)
+		if Input.is_action_just_pressed("Enter"):
+			get_tree().create_timer(0.5).timeout.connect(func(): load_strategem())
+			is_reset = true
+	
+	if is_reset:
+		progress_bar.value += 100 * delta
+		if progress_bar.value == 100:
+			is_reset = false
+			can_play = true
 
 
 func process_dir(action: StringName, dir: String) -> void:
-	if not Input.is_action_just_pressed(action):
+	if not Input.is_action_just_pressed(action) || !can_play:
 		return
 	
 	var current_dir_strategem: PackedStringArray = current_strategem.arrows.duplicate()
@@ -114,6 +170,8 @@ func process_dir(action: StringName, dir: String) -> void:
 		if current_dir_strategem.size() <= current_strategem_index:
 			current_strategem_index = 0
 			progress_bar.value += 12.0
+			score += 3 * (progress_bar.value / 2)
+			score_num.text = str(score)
 			load_strategem()
 	else:
 		current_strategem_index = 0
@@ -122,5 +180,4 @@ func process_dir(action: StringName, dir: String) -> void:
 			i.modulate = red
 			get_tree().create_timer(0.25).timeout.connect(func(): i.modulate = gray)
 		
-		progress_bar.value -= 15.0
 		get_tree().create_timer(0.25).timeout.connect(func(): is_screen_shaking = false)
