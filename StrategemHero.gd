@@ -8,6 +8,14 @@ extends ColorRect
 @onready var round_num: Label = %RoundNum
 @onready var score_num: Label = %ScoreNum
 @onready var name_bar: ColorRect = %Name
+@onready var button_press_sound: AudioStreamPlayer2D = %ButtonPress
+@onready var button_press_error_sound: AudioStreamPlayer2D = %ButtonPressError
+@onready var game_music_sound: AudioStreamPlayer2D = %GameMusic
+@onready var game_over_sound: AudioStreamPlayer2D = %GameOver
+@onready var round_over_sound: AudioStreamPlayer2D = %RoundOver
+@onready var round_start_coin_1_sound: AudioStreamPlayer2D = %RoundStartCoin1
+@onready var round_start_coin_2_sound: AudioStreamPlayer2D = %RoundStartCoin2
+@onready var sequence_success_sound: AudioStreamPlayer2D = %SequenceSuccess
 
 @onready var style_box := progress_bar.get_theme_stylebox("fill")
 
@@ -58,6 +66,8 @@ func _ready() -> void:
 		
 		strategem.arrows = arrows_cooked
 		strategems.append(strategem)
+	
+	game_music_sound.play()
 	
 	load_strategem()
 
@@ -139,6 +149,9 @@ func _process(delta: float) -> void:
 		icons.get_child(0).get_theme_stylebox("panel").border_color = yellow
 	
 	if progress_bar.value <= 0:
+		if can_play:
+			game_music_sound.stop()
+			game_over_sound.play()
 		is_screen_shaking = true
 		can_play = false
 		rounds = 1
@@ -165,16 +178,19 @@ func process_dir(action: StringName, dir: String) -> void:
 	
 	if dir == current_dir_strategem[current_strategem_index]:
 		arrow_container.get_child(current_strategem_index).modulate = yellow
+		button_press_sound.play()
 		current_strategem_index += 1
 		
 		if current_dir_strategem.size() <= current_strategem_index:
 			current_strategem_index = 0
+			sequence_success_sound.play()
 			progress_bar.value += 12.0
 			score += 3 * (progress_bar.value / 2)
 			score_num.text = str(score)
 			load_strategem()
 	else:
 		current_strategem_index = 0
+		button_press_error_sound.play()
 		is_screen_shaking = true
 		for i in arrow_container.get_children():
 			i.modulate = red
